@@ -4,7 +4,7 @@
 ## 最低配置
 需要16g显存，如果主机显存不够可以考虑腾讯云的活动，60块钱15天32g内存、t4显卡的主机，非常划算😝，可以跑动baichuan2-13b-chat-4bits。  
   
-<a href="https://s2.loli.net/2023/09/25/q7c4jdjocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/q7c4jdjocwym1fh.png" width="60%"></a>  
+<a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" width="60%"></a>  
 
 地址: [https://cloud.tencent.com/act/pro/gpu-study](https://cloud.tencent.com/act/pro/gpu-study)  
 
@@ -39,8 +39,9 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 ```
 打开 http://127.0.0.1:5000/apidocs/
 ```
-  
-<a href="https://s2.loli.net/2023/09/25/o8i5ge3onfhsaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/o8i5ge3onfhsaqz.png", width="60%" ></a>  
+Swagger
+
+<a href="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png", width="60%" ></a>  
 
 ## 使用
 替换openai_base_api, 以langchain为例
@@ -77,5 +78,5 @@ print(llm("登鹳雀楼->王之涣\n夜雨寄北->"))
   
 openai translator 设置中把api url修改为你的ip  
 
-<a href="https://s2.loli.net/2023/09/25/jbqns1kbljhv4k6.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqns1kbljhv4k6.png" width="60%"></a>  
+<a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" width="60%"></a>  
 
