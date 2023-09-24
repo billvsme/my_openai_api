@@ -4,7 +4,8 @@
 ## 最低配置
 需要16G显存，如果主机显存不够可以考虑腾讯云的活动，60块钱15天32G内存、T4显卡的主机，非常划算😝，可以跑动Baichuan2-13B-Chat-4bits。  
   
-![github_my_open_api_001.png](https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png)
+<a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" width="60%"></a>  
+
 地址: [https://cloud.tencent.com/act/pro/gpu-study](https://cloud.tencent.com/act/pro/gpu-study)  
 
 如果想要本地运行，T4显卡价格在5600元左右。如果嫌贵，可以考虑2080ti魔改22G版本，某宝2600元左右 🤓️。
@@ -38,7 +39,8 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 ```
 打开 http://127.0.0.1:5000/apidocs/
 ```
-![github_my_open_api_002.png](https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png)
+<a href="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png", width="60%" ></a>  
+
 ## 使用
 替换openai_base_api, 以langchain为例
 ```
@@ -73,4 +75,5 @@ print(llm("登鹳雀楼->王之涣\n夜雨寄北->"))
 ```
   
 OpenAI Translator 设置中把API URL修改为你的ip  
-![github_my_open_api_003.png](https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png)
+<a href="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" width="60%"></a>  
+
