@@ -39,7 +39,8 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 ```
 打开 http://127.0.0.1:5000/apidocs/
 ```
-<a href="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png", width="60%" ></a>  
+
+<a href="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png", width="60%" ></a>  
 
 ## 使用
 替换openai_base_api, 以langchain为例
@@ -75,5 +76,6 @@ print(llm("登鹳雀楼->王之涣\n夜雨寄北->"))
 ```
   
 OpenAI Translator 设置中把API URL修改为你的ip  
+
 <a href="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" width="60%"></a>  
 
