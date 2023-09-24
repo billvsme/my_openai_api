@@ -1,0 +1,17 @@
+Flask==2.3.3
+Flask-Cors==4.0.0
+gunicorn==21.2.0
+transformers==4.30.2
+torch==2.0.1
+torchvision==0.15.2
+xformers==0.0.21
+flasgger==0.9.7.1
+marshmallow==3.20.1
+apispec==6.3.0
+apispec-webframeworks==0.5.2
+accelerate==0.23.0
+colorama==0.4.6
+bitsandbytes==0.41.1
+sentencepiece==0.1.99
+streamlit==1.26.0
+scipy==1.11.2
