@@ -41,7 +41,7 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 ```
 Swagger
 
-<a href="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png", width="60%" ></a>  
+![github_my_open_api_002.png](https://s2.loli.net/2023/09/25/o8I5GE3ONfhSaqz.png)
 
 ## 使用
 替换openai_base_api, 以langchain为例
