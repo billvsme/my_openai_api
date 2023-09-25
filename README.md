@@ -1,6 +1,6 @@
 # my_openai_api
 
-部署你自己的**OpenAI** api😆，基于**flask, transformers** (使用 **Baichuan2-13B-Chat-4bits** 模型，可以运行在单张Tesla T4显卡) ，实现以下**OpenAI**接口：
+部署你自己的**OpenAI** 格式api😆，基于**flask, transformers** (使用 **Baichuan2-13B-Chat-4bits** 模型，可以运行在单张Tesla T4显卡) ，实现以下**OpenAI**接口：
 - **Chat**   /v1/chat/completions
 - **Models**   /v1/models
 - **Completions**   /v1/completions
@@ -64,32 +64,32 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 替换openai_base_api, 以langchain为例
 ```
 # coding: utf-8
-from langchain.llms import openai
-from langchain.chat_models import chatopenai
-from langchain.callbacks.streaming_stdout import streamingstdoutcallbackhandler
+from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.schema import (
-    humanmessage,
+    HumanMessage,
 )
 
 openai_api_base = "http://127.0.0.1:5000/v1"
 openai_api_key = "test"
 
 # /v1/chat/completions流式响应
-chat_model = chatopenai(streaming=true, callbacks=[streamingstdoutcallbackhandler()], openai_api_base=openai_api_base, openai_api_key=openai_api_key)
-resp = chat_model([humanmessage(content="给我一个django admin的demo代码")])
+chat_model = ChatOpenAI(streaming=True, callbacks=[StreamingStdOutCallbackHandler()], openai_api_base=openai_api_base, openai_api_key=openai_api_key)
+resp = chat_model([HumanMessage(content="给我一个django admin的demo代码")])
 chat_model.predict("你叫什么?")
 
 # /v1/chat/completions普通响应
-chat_model = chatopenai(openai_api_base=openai_api_base, openai_api_key=openai_api_key)
+chat_model = ChatOpenAI(openai_api_base=openai_api_base, openai_api_key=openai_api_key)
 resp = chat_model.predict("给我一个django admin的demo代码")
 print(resp)
 
 # /v1/completions流式响应
-llm = openai(streaming=true, callbacks=[streamingstdoutcallbackhandler()], temperature=0, openai_api_base=openai_api_base, openai_api_key=openai_api_key)
+llm = OpenAI(streaming=True, callbacks=[StreamingStdOutCallbackHandler()], temperature=0, openai_api_base=openai_api_base, openai_api_key=openai_api_key)
 llm("登鹳雀楼->王之涣\n夜雨寄北->")
 
 # /v1/completions普通响应
-llm = openai(openai_api_base="http://43.134.77.153:5000/v1", openai_api_key=openai_api_key)
+llm = OpenAI(openai_api_base=openai_api_base, openai_api_key=openai_api_key)
 print(llm("登鹳雀楼->王之涣\n夜雨寄北->"))
 ```
   
