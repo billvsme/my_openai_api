@@ -61,7 +61,9 @@ gunicorn -b 0.0.0.0:5000 --workers=1  my_openai_api:app
 
 ## 使用
 
-替换openai_base_api, 以langchain为例
+### langchain
+
+替换openai_base_api
 ```
 # coding: utf-8
 from langchain.llms import OpenAI
@@ -92,8 +94,16 @@ llm("登鹳雀楼->王之涣\n夜雨寄北->")
 llm = OpenAI(openai_api_base=openai_api_base, openai_api_key=openai_api_key)
 print(llm("登鹳雀楼->王之涣\n夜雨寄北->"))
 ```
-  
-openai translator 设置中把api url修改为你的ip  
+
+### ChatGPT Next 
+
+设置中把接口地址修改为你的ip，如果部署网页为https，注意在Chrome设置中“不安全内容”选择“允许”
+
+<a href="https://sm.ms/image/8eMUw6sHXP9QBmj" target="_blank"><img src="https://s2.loli.net/2023/09/25/8eMUw6sHXP9QBmj.png" width="50%"></a>
+
+### OpenAI Translator
+
+设置中把api url修改为你的ip  
 
 <a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/jbqNs1kBlJHv4K6.png" width="60%"></a>  
 
