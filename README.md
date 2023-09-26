@@ -28,10 +28,12 @@
 ```
 git clone https://github.com/billvsme/my_openai_api.git
 ```
-2. 下载baichuan2-13b-chat-4bits模型
+2. 下载Baichuan2-13B-Chat-4bits模型
 ```
 cd my_openai_api
-git clone https://huggingface.co/baichuan-inc/baichuan2-7b-chat-4bits  # 需要先安装好hfs， git lfs install
+
+git lfs install #需要先安装好git-lfs
+git clone https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat-4bits
 ```
 3. 安装venv环境
 ```
