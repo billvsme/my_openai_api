@@ -26,7 +26,7 @@
 免费的Colab可以使用12G内存和T4显卡🤓️，可以考虑免费的Colab结合ngrok运行  
 
 ### 步骤
-1. 打开  [![Colab](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/13sGUCnqTGtnaZOpwNhQLsV5HZxm6KfVB#scrollTo=NKGQRhxkDddZ&forceEdit=true&sandboxMode=true)
+1. 打开  [![Colab](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/13sGUCnqTGtnaZOpwNhQLsV5HZxm6KfVB#scrollTo=-50AbTRLCh5D&forceEdit=true&sandboxMode=true)
 2. 修改 NGROK_AUTHTOKEN，注意不要带双引号  
 3. 修改运行配置，点击 修改 -> 笔记本设置 中把显卡改成T4  
 4. 运行，点击 代码执行程序 -> 全部运行  (下载模型时间较长，请耐心等在)
