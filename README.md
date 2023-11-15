@@ -14,13 +14,24 @@
 
 ## 最低配置
 
-需要16g显存，如果主机显存不够可以考虑腾讯云的活动，60块钱15天32g内存、T4显卡的主机，非常划算😝，可以跑动baichuan2-13b-chat-4bits。  
+需要16g显存，如果主机显存不够可以考虑~~腾讯云的活动，60块钱15天32g内存、T4显卡的主机~~（活动已经下架，可以考虑使用Colab），非常划算😝，可以跑动baichuan2-13b-chat-4bits。  
   
 <a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" width="60%"></a>  
 
 地址: [https://cloud.tencent.com/act/pro/gpu-study](https://cloud.tencent.com/act/pro/gpu-study)  
 
 如果想要本地运行，T4显卡价格在5600元左右，也可以考虑2080ti魔改22g版本，某宝只要2600元左右 🤓️。
+
+## Colab
+免费的Colab可以使用12G内存和T4显卡🤓️，可以考虑免费的Colab结合ngrok运行  
+
+### 步骤
+1. 打开  [![Colab](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/13sGUCnqTGtnaZOpwNhQLsV5HZxm6KfVB#scrollTo=-50AbTRLCh5D&forceEdit=true&sandboxMode=true)
+2. 修改 NGROK_AUTHTOKEN，注意不要带双引号  
+3. 修改运行配置，点击 修改 -> 笔记本设置 中把显卡改成T4  
+4. 运行，点击 代码执行程序 -> 全部运行  (下载模型时间较长，请耐心等在)
+5. 运行结束后查看输出的ngrok外网访问链接，使用该链接请求
+
 
 ## 安装
 
