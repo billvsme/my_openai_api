@@ -14,11 +14,11 @@
 
 ## 最低配置
 
-需要16g显存，如果主机显存不够可以考虑~~腾讯云的活动，60块钱15天32g内存、T4显卡的主机~~（活动已经下架，可以考虑使用Colab），非常划算😝，可以跑动baichuan2-13b-chat-4bits。  
+需要16g显存，如果主机显存不够可以考虑~~腾讯云的活动，60块钱15天32g内存、T4显卡的主机~~（**活动已经下架，可以考虑使用Colab**），非常划算😝，可以跑动baichuan2-13b-chat-4bits。  
   
 <a href="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" target="_blank"><img src="https://s2.loli.net/2023/09/25/q7C4jdJocwym1fh.png" width="60%"></a>  
 
-地址: [https://cloud.tencent.com/act/pro/gpu-study](https://cloud.tencent.com/act/pro/gpu-study)  
+~~地址: https://cloud.tencent.com/act/pro/gpu-study~~
 
 如果想要本地运行，T4显卡价格在5600元左右，也可以考虑2080ti魔改22g版本，某宝只要2600元左右 🤓️。
 
