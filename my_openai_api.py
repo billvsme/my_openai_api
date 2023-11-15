@@ -459,4 +459,13 @@ def create_completion():
 app = create_app()
 
 if __name__ == '__main__':
+    try:
+        import ngrok
+        import logging
+
+        logging.basicConfig(level=logging.INFO)
+        listener = ngrok.werkzeug_develop()
+    except Exception:
+        pass
+
     app.run(debug=False, host="0.0.0.0")
